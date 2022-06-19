@@ -15,5 +15,28 @@ last_modified_at: 2020-06-19
 ---
 
 
-#1. github
+# Chapter 1
 
+## github
+
+
+### github란?
+* write by this subject
+
+### 형상관리란?
+* write by this subject
+
+### git과 github의 차이점
+* write by this subject
+
+### github의 사용법
+* write by this subject
+
+### Fork, Pull Request
+* write by this subject
+
+### Pull, Push, COmmit, Merge, Branch
+* write by this subject
+
+### Issue, Project, Tag, Release
+* write by this subject
