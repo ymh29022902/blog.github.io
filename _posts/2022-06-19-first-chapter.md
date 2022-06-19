@@ -31,23 +31,68 @@ last_modified_at: 2020-06-19
 >> 변경관리 : 소스코드 변경 사항에 대한 관리  
 >> 버전 관리 : 변경사항을 버전이란 개념을 통해 관리
 
-* 형상 관리의 구조
-> * 형상 식별(Configuration Identification) : 형상 관리의 대상이 무엇인지 식별하는 것. 
-> * 형상 제어(Configuration COntrol) : 형상 항목의 버전(version control)과 변경에 대한 판단을 내리는 것
-> * 형상 감사(Configuration Audit) : 요구대로 형상 항목의 변경이 제대로 이뤄졌는지 살펴보는 것
-> * 형상 상태 보고(Configuration Statue Accounting) : 변경된 형상 항목을 관계된 사람들에게 알리는 것
+#### 형상 관리의 구조
+* 형상 식별(Configuration Identification) : 형상 관리의 대상이 무엇인지 식별하는 것. 
+* 형상 제어(Configuration COntrol) : 형상 항목의 버전(version control)과 변경에 대한 판단을 내리는 것
+* 형상 감사(Configuration Audit) : 요구대로 형상 항목의 변경이 제대로 이뤄졌는지 살펴보는 것
+* 형상 상태 보고(Configuration Statue Accounting) : 변경된 형상 항목을 관계된 사람들에게 알리는 것
 
 ### git과 github의 차이점
-* write by this subject
+
+#### git
+* 로컬에서 관리되는 오픈 소스 버전 관리 시스템(VCS : Version Control System)
+* 소스코드 수정에 따른 버전을 관리해주는 시스템
+* 브랜치의 생성, 이전 브랜치 복구, 삭제, 병합이 가능
+* 로컬 저장소를 사용하므로 다른 개발자와 실시간으로 작업을 공유할 수 없음
+
+#### github
+* Git 저장소를 관리하는 클라우드 기반 호스팅 시스템(VCS)
+>> 코드가 변경된 기록을 모두 로그화
+자체 구축이 아닌 빌려쓰는 클라우드 개념
+* 오픈소스는 일정 부분 무료로 저장 가능, 아닐 경우 유료로 사용
+* Git으로 로컬 저장소에 작업한 내용을 저장한 뒤 해당 내용을 Github에 업로드하는 형식으로 사용
 
 ### github의 사용법
 * write by this subject
 
 ### Fork, Pull Request
-* write by this subject
+#### Fork 
+* 상대방의 저장소를 나의 저장소로 그대로 복사, 찍어내는 것
+* 수정된 파일은 원작자의 저장소가 아닌, 본인의 저장소에 저장됨
+* 저장소에 업로드 되는 과정을 커밋(commit)이라고 하며, 커밋 과정시엔 커밋 메세지를 통해 변경사항을 기록하여야 한다,
+#### Pull Request  
+* 본인의 저장소에 복사된 저장소로 입장, pull request 탭으로 들어가 new pull request를 선택한 후 본인의 파일을 pull  request 할 수 있다.
+* 저장소의 원작자에게 자신이 제작한 파일을 '가져가서 적용'해줄 것을 요청
+* commit과 마찬가지로 커밋 메세지를 통해 상세 내역 기록
+
 
 ### Pull, Push, COmmit, Merge, Branch
-* write by this subject
+* 풀(Pull) : Github(또는 원격 저장소)에서 파일을 다운로드하는 작업
+* 커밋(Comit) : Git(로컬 저장소)에 파일을 추가하거나 변경 내용을 저장하는 방법
+* 푸쉬(Push) : Github(또는 원격 저장소)에 파일을 추가하거나 변경 내용을 저장하는 작업
+* Merge : 여러 개의 브랜치를 하나로 모으는 브랜치 통합 방식
 
 ### Issue, Project, Tag, Release
-* write by this subject
+#### Issue 
+* 프로젝트 기획, 새롭게 추가될 기능, 버그와 수정사항 등 모든 것
+* 모든 활동 내역에 대해서 이슈를 등록하고 등록한 이슈를 기반으로 작업을 진행할 수 있기에 프로젝트의 작업, 개선 사항 및 버그를 추적하는 좋은 방법으로 사용됨
+
+* 개발자간 idead, work, bug(problem)을 다루기 위해 깃허브는 이슈를 사용함.
+  * 아이더 구현에 관한 논의
+  * 작업 진행사항 추적
+  * 기능 제안 수락, 질문, 요청 지원 또는 버그 보고
+  * 정교한 코드 구현
+
+* 이슈를 등록하기 위한 단계
+  * 이슈 탭 오픈
+  * 해당 문제, 상황을 재현할 수 있는 최대한 많은 정보(context)를 제공
+  * 해당 환경 정보(버전, os 등) 관련이 있다고 생각하는 모든 정보를 제공
+
+* 이슈 등록 후의 단계
+  * 프로젝트 팀(혹은 매니저)이 라벨(label)과 담당자(assingn)을 지정
+  * 담당자의 신속한 응답 환경 구축을 위한 노력
+  * 해결이 되거나 오랜 기간 답변이 없을 경우, 이슈는 닫힘(closed).
+
+
+## markdown
+
